@@ -1,0 +1,19 @@
+<settings>
+  <servers>
+    <server>
+      <id>maven-dev</id>
+      <username>anmol.pandey@harness.io</username>
+      <password>$(token)</password>
+    </server>
+  </servers>
+</settings>
+<distributionManagement>
+  <snapshotRepository>
+    <id>maven-dev</id>
+    <url>https://pkg.harness.io/pkg/AM8HCbDiTXGQNrTIhNl7qQ/maven_registry/maven</url>
+  </snapshotRepository>
+  <repository>
+    <id>maven-dev</id>
+    <url>https://pkg.harness.io/pkg/AM8HCbDiTXGQNrTIhNl7qQ/maven_registry/maven</url>
+  </repository>
+</distributionManagement>
