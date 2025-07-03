@@ -7,6 +7,7 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>https://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
@@ -15,9 +16,22 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>maven-dev</id>
+      <url>https://pkg.harness.io/pkg/AM8HCbDiTXGQNrTIhNl7qQ/maven_registry/maven</url>
+    </snapshotRepository>
+    <repository>
+      <id>maven-dev</id>
+      <url>https://pkg.harness.io/pkg/AM8HCbDiTXGQNrTIhNl7qQ/maven_registry/maven</url>
+    </repository>
+  </distributionManagement>
+
   <build>
     <pluginManagement>
       <plugins>
