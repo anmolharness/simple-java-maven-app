@@ -3,7 +3,7 @@
     <server>
       <id>maven-dev</id>
       <username>anmol.pandey@harness.io</username>
-      <password>$(env.token)</password>
+      <password>$token</password>
     </server>
   </servers>
 </settings>
